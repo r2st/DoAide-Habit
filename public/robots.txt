@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://habit.doaide.com/sitemap.xml
