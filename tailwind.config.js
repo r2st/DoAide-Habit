@@ -5,8 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: '#F0B429',
-        'gold-dark': '#D69E2E',
+        'da-primary': 'var(--da-primary)',
+        'da-primary-hover': 'var(--da-primary-hover)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],

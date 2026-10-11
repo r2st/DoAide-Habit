@@ -66,7 +66,7 @@ export default function HabitList({ habits, toggleCompletion, addHabit, updateHa
           </p>
           <button
             onClick={() => { setEditHabit(null); setModalOpen(true); }}
-            className="bg-gold hover:bg-gold-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+            className="bg-da-primary hover:bg-da-primary-hover text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             Add Your First Habit
           </button>
@@ -95,7 +95,7 @@ export default function HabitList({ habits, toggleCompletion, addHabit, updateHa
 
       <button
         onClick={() => { setEditHabit(null); setModalOpen(true); }}
-        className="fixed bottom-20 right-4 w-14 h-14 bg-gold hover:bg-gold-dark text-white rounded-full shadow-lg flex items-center justify-center text-2xl font-light transition-all hover:scale-110 active:scale-95 z-30"
+        className="fixed bottom-20 right-4 w-14 h-14 bg-da-primary hover:bg-da-primary-hover text-white rounded-full shadow-lg flex items-center justify-center text-2xl font-light transition-all hover:scale-110 active:scale-95 z-30"
       >
         +
       </button>

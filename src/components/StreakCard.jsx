@@ -22,7 +22,7 @@ export default function StreakCard({ habit }) {
           </div>
           <button
             onClick={() => setShareOpen(true)}
-            className="text-xs px-3 py-1 bg-gold/10 text-gold hover:bg-gold/20 rounded-full font-medium transition"
+            className="text-xs px-3 py-1 bg-da-primary/10 text-da-primary hover:bg-da-primary/20 rounded-full font-medium transition"
           >
             Share
           </button>

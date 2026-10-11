@@ -83,6 +83,14 @@ export default function App() {
         {renderView()}
       </main>
 
+      <footer className="pb-20 pt-8 text-center">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-da-primary/10 text-da-primary text-xs font-medium">
+          <span>A</span>
+          <span className="font-bold">DoAide</span>
+          <span>Product</span>
+        </div>
+      </footer>
+
       <nav className="fixed bottom-0 inset-x-0 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 safe-area-pb z-40">
         <div className="flex justify-around items-center max-w-lg mx-auto h-16">
           {TABS.map((tab) => (
@@ -91,7 +99,7 @@ export default function App() {
               onClick={() => setActiveTab(tab.id)}
               className={`flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-lg transition-colors ${
                 activeTab === tab.id
-                  ? 'text-gold'
+                  ? 'text-da-primary'
                   : 'text-gray-400 dark:text-gray-500'
               }`}
             >

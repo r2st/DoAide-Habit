@@ -95,7 +95,7 @@ export default function AddHabitModal({ isOpen, onClose, onSave, onDelete, onArc
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="e.g., Drink water"
-              className="mt-1 w-full px-4 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 border-none focus:ring-2 focus:ring-gold outline-none transition"
+              className="mt-1 w-full px-4 py-3 rounded-xl bg-gray-100 dark:bg-gray-800 border-none focus:ring-2 focus:ring-da-primary outline-none transition"
               autoFocus
             />
           </div>
@@ -109,7 +109,7 @@ export default function AddHabitModal({ isOpen, onClose, onSave, onDelete, onArc
                   type="button"
                   onClick={() => setIcon(emoji)}
                   className={`w-10 h-10 text-xl rounded-lg flex items-center justify-center transition ${
-                    icon === emoji ? 'bg-gold/20 ring-2 ring-gold' : 'bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'
+                    icon === emoji ? 'bg-da-primary/20 ring-2 ring-da-primary' : 'bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700'
                   }`}
                 >
                   {emoji}
@@ -143,7 +143,7 @@ export default function AddHabitModal({ isOpen, onClose, onSave, onDelete, onArc
                   onClick={() => setCategory(cat.id)}
                   className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
                     category === cat.id
-                      ? 'bg-gold text-white'
+                      ? 'bg-da-primary text-white'
                       : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
                   }`}
                 >
@@ -163,7 +163,7 @@ export default function AddHabitModal({ isOpen, onClose, onSave, onDelete, onArc
                   onClick={() => setFreqType(ft)}
                   className={`px-3 py-1.5 rounded-full text-sm font-medium capitalize transition ${
                     freqType === ft
-                      ? 'bg-gold text-white'
+                      ? 'bg-da-primary text-white'
                       : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400'
                   }`}
                 >
@@ -180,7 +180,7 @@ export default function AddHabitModal({ isOpen, onClose, onSave, onDelete, onArc
                     onClick={() => toggleDay(i)}
                     className={`w-9 h-9 rounded-full text-xs font-medium transition ${
                       customDays.includes(i)
-                        ? 'bg-gold text-white'
+                        ? 'bg-da-primary text-white'
                         : 'bg-gray-100 dark:bg-gray-800 text-gray-500'
                     }`}
                   >
@@ -212,7 +212,7 @@ export default function AddHabitModal({ isOpen, onClose, onSave, onDelete, onArc
           <button
             type="submit"
             disabled={!name.trim()}
-            className="w-full py-3 bg-gold hover:bg-gold-dark disabled:opacity-40 text-white font-semibold rounded-xl transition-colors"
+            className="w-full py-3 bg-da-primary hover:bg-da-primary-hover disabled:opacity-40 text-white font-semibold rounded-xl transition-colors"
           >
             {editHabit ? 'Save Changes' : 'Add Habit'}
           </button>

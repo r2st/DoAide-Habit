@@ -73,7 +73,7 @@ export default function CalendarHeatmap({ habits }) {
   }, [weeks]);
 
   const selectedHabit = habits.find((h) => h.id === selectedId);
-  const baseColor = selectedHabit?.color || '#F0B429';
+  const baseColor = selectedHabit?.color || '#0D9488';
 
   const getCellColor = (cell) => {
     if (cell.total === 0) return 'bg-gray-100 dark:bg-gray-800';
@@ -99,7 +99,7 @@ export default function CalendarHeatmap({ habits }) {
         <select
           value={selectedId}
           onChange={(e) => setSelectedId(e.target.value)}
-          className="text-sm bg-gray-100 dark:bg-gray-800 rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-gold"
+          className="text-sm bg-gray-100 dark:bg-gray-800 rounded-lg px-3 py-1.5 outline-none focus:ring-2 focus:ring-da-primary"
         >
           <option value="all">All habits</option>
           {habits.map((h) => (

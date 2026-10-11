@@ -46,7 +46,7 @@ export default function WeeklyView({ habits, toggleCompletion }) {
                     {DAY_LABELS_SHORT[new Date(date + 'T00:00:00').getDay()]}
                   </span>
                   <br />
-                  <span className={`text-xs font-semibold ${date === today ? 'text-gold' : 'text-gray-600 dark:text-gray-300'}`}>
+                  <span className={`text-xs font-semibold ${date === today ? 'text-da-primary' : 'text-gray-600 dark:text-gray-300'}`}>
                     {new Date(date + 'T00:00:00').getDate()}
                   </span>
                 </th>
@@ -74,7 +74,7 @@ export default function WeeklyView({ habits, toggleCompletion }) {
                         <button
                           onClick={() => toggleCompletion(habit.id, date)}
                           className={`w-8 h-8 rounded-full border-2 mx-auto flex items-center justify-center transition-all ${
-                            isToday ? 'ring-2 ring-gold/30' : ''
+                            isToday ? 'ring-2 ring-da-primary/30' : ''
                           }`}
                           style={{
                             borderColor: isDone ? habit.color : isScheduled ? `${habit.color}40` : '#e5e7eb',

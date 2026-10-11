@@ -76,9 +76,9 @@ export default function StatsView({ habits }) {
         <ResponsiveContainer width="100%" height={180}>
           <AreaChart data={chartData}>
             <defs>
-              <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#F0B429" stopOpacity={0.3} />
-                <stop offset="95%" stopColor="#F0B429" stopOpacity={0} />
+              <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor="#0D9488" stopOpacity={0.3} />
+                <stop offset="95%" stopColor="#0D9488" stopOpacity={0} />
               </linearGradient>
             </defs>
             <XAxis dataKey="week" tick={{ fontSize: 10 }} stroke="#9CA3AF" axisLine={false} tickLine={false} />
@@ -93,7 +93,7 @@ export default function StatsView({ habits }) {
               }}
               formatter={(value) => [`${value}%`, 'Completion']}
             />
-            <Area type="monotone" dataKey="rate" stroke="#F0B429" strokeWidth={2} fill="url(#goldGrad)" />
+            <Area type="monotone" dataKey="rate" stroke="#0D9488" strokeWidth={2} fill="url(#tealGrad)" />
           </AreaChart>
         </ResponsiveContainer>
       </div>

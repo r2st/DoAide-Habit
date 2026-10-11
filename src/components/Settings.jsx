@@ -57,7 +57,7 @@ export default function Settings({ theme, setTheme, habits, replaceAll, notifica
               onClick={() => setTheme(t.id)}
               className={`flex-1 py-3 rounded-xl font-medium text-sm transition ${
                 theme === t.id
-                  ? 'bg-gold text-white'
+                  ? 'bg-da-primary text-white'
                   : 'bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-400 shadow-sm'
               }`}
             >
@@ -78,7 +78,7 @@ export default function Settings({ theme, setTheme, habits, replaceAll, notifica
             <button
               onClick={notifications.toggle}
               className={`relative w-12 h-7 rounded-full transition-colors ${
-                notifications.enabled ? 'bg-gold' : 'bg-gray-300 dark:bg-gray-700'
+                notifications.enabled ? 'bg-da-primary' : 'bg-gray-300 dark:bg-gray-700'
               }`}
             >
               <span
@@ -152,12 +152,17 @@ export default function Settings({ theme, setTheme, habits, replaceAll, notifica
 
       <section className="text-center pb-8">
         <h1 className="text-lg font-bold">
-          DoAide <span className="italic text-gold">Habit</span>
+          DoAide <span className="text-gray-300 dark:text-gray-600 font-light mx-0.5">|</span> <span className="text-da-primary">Habit</span>
         </h1>
         <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
           Free habit tracker. No login required.
           <br />Your data stays on your device.
         </p>
+        <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-da-primary/10 text-da-primary text-xs font-medium">
+          <span>A</span>
+          <span className="font-bold">DoAide</span>
+          <span>Product</span>
+        </div>
         <p className="text-xs text-gray-300 dark:text-gray-600 mt-2">v1.0.0</p>
       </section>
 

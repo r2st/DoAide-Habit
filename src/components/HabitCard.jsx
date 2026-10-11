@@ -15,7 +15,7 @@ export default function HabitCard({ habit, onToggle, onEdit }) {
         id: Date.now() + i,
         x: Math.random() * 40 - 20,
         y: -(Math.random() * 30 + 20),
-        color: ['#F0B429', '#3B82F6', '#EF4444', '#10B981', '#8B5CF6', '#EC4899'][i % 6],
+        color: ['#0D9488', '#3B82F6', '#EF4444', '#10B981', '#8B5CF6', '#EC4899'][i % 6],
         delay: Math.random() * 0.2,
       }));
       setConfetti(pieces);

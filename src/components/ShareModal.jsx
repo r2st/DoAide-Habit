@@ -69,7 +69,7 @@ export default function ShareModal({ isOpen, onClose, habit }) {
           {navigator.share && (
             <button
               onClick={handleNativeShare}
-              className="col-span-2 flex items-center justify-center gap-2 py-3 bg-gold hover:bg-gold-dark text-white font-medium rounded-xl transition"
+              className="col-span-2 flex items-center justify-center gap-2 py-3 bg-da-primary hover:bg-da-primary-hover text-white font-medium rounded-xl transition"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8M16 6l-4-4-4 4M12 2v13" />

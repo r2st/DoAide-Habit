@@ -21,7 +21,7 @@ export default function Header({ habits, today }) {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-bold tracking-tight">
-            DoAide <span className="italic text-gold font-bold">Habit</span>
+            DoAide <span className="text-gray-300 dark:text-gray-600 font-light mx-0.5">|</span> <span className="text-da-primary font-bold">Habit</span>
           </h1>
           <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">{formatted}</p>
         </div>
@@ -37,7 +37,7 @@ export default function Header({ habits, today }) {
       {scheduledToday.length > 0 && (
         <div className="mt-3 h-1.5 bg-gray-200 dark:bg-gray-800 rounded-full overflow-hidden">
           <div
-            className="h-full bg-gold rounded-full transition-all duration-500 ease-out"
+            className="h-full bg-da-primary rounded-full transition-all duration-500 ease-out"
             style={{ width: `${(doneToday / scheduledToday.length) * 100}%` }}
           />
         </div>

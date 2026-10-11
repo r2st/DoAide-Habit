@@ -37,7 +37,7 @@ export function generateShareCard(habit, streak, longestStreak, completionRate) 
   ctx.roundRect(0, 0, 600, 340, 20);
   ctx.fill();
 
-  ctx.fillStyle = habit.color || '#F0B429';
+  ctx.fillStyle = habit.color || '#0D9488';
   ctx.beginPath();
   ctx.roundRect(0, 0, 600, 6, [20, 20, 0, 0]);
   ctx.fill();
@@ -49,7 +49,7 @@ export function generateShareCard(habit, streak, longestStreak, completionRate) 
   ctx.font = 'bold 28px Inter, sans-serif';
   ctx.fillText(habit.name, 80, 62);
 
-  ctx.fillStyle = '#F0B429';
+  ctx.fillStyle = '#0D9488';
   ctx.font = 'bold 72px Inter, sans-serif';
   ctx.fillText(`${streak}`, 30, 170);
 
@@ -66,9 +66,9 @@ export function generateShareCard(habit, streak, longestStreak, completionRate) 
   ctx.font = '16px Inter, sans-serif';
   ctx.fillText('habit.doaide.com', 30, 310);
 
-  ctx.fillStyle = '#F0B429';
-  ctx.font = 'italic bold 16px Inter, sans-serif';
-  ctx.fillText('DoAide Habit', 440, 310);
+  ctx.fillStyle = '#0D9488';
+  ctx.font = 'bold 16px Inter, sans-serif';
+  ctx.fillText('DoAide | Habit', 430, 310);
 
   return canvas.toDataURL('image/png');
 }
