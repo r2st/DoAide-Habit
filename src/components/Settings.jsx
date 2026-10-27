@@ -151,9 +151,9 @@ export default function Settings({ theme, setTheme, habits, replaceAll, notifica
       </section>
 
       <section className="text-center pb-8">
-        <h1 className="text-lg font-bold">
+        <p className="text-lg font-bold">
           DoAide <span className="text-gray-300 dark:text-gray-600 font-light mx-0.5">|</span> <span className="text-da-primary">Habit</span>
-        </h1>
+        </p>
         <p className="text-xs text-gray-400 dark:text-gray-500 mt-1">
           Free habit tracker. No login required.
           <br />Your data stays on your device.
